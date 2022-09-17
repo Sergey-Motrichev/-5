@@ -16,14 +16,14 @@ void PrintArrey(int[]array){
     }
     System.Console.WriteLine();
 }
-int AltNum(int[]array){
-    int N=0;
+int AltSum(int[]array){
+    int Sum=0;
     for(var i=0;i<array.Length;i++){
         if (array[i]%2>0)
-        N++;
+        Sum=Sum+array[i];
     }
-    return N;
+    return Sum;
 }
 var array=GenerateArray(4);
 PrintArrey(array);
-System.Console.WriteLine(AltNum(array));
+System.Console.WriteLine(AltSum(array));
